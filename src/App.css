@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
+
+/* container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* title spacing fix */
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* form */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+/* button */
+button {
+  padding: 10px 15px;
+  background: #38bdf8;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* card */
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* spacing fix inside card */
+.card-top {
+  margin-bottom: 15px;
+}
+
+/* bottom row fix */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* status badge */
+.status {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* status colors */
+.status.Active {
+  background: green;
+}
+
+.status.Pending {
+  background: orange;
+}
+
+.status.Completed {
+  background: blue;
+}
+
+/* delete button fix */
+.delete-btn {
+  background: red;
+  color: white;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* total */
+.total {
+  margin-top: 20px;
+  text-align: center;
+}
